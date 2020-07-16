@@ -20,7 +20,7 @@ $(document).ready(function () {
     });
 
     var typed = new Typed(".typed", {
-        strings: ["Software Engineer.", "Python Developer.", "Student."],
+        strings: ["Software Engineer.", "Python Developer.", "And a Learner."],
         typeSpeed: 70,
         loop:  true,
         startDelay: 1000,
@@ -62,7 +62,7 @@ $(document).ready(function () {
     });
 
     var backEndTopOffset = $(".backEndSection").offset().top;
-    console.log(backEndTopOffset)
+
     $(window).scroll(function () {
         if(window.pageYOffset > backEndTopOffset - $(window).height() + 200){
                 $('.chart').easyPieChart({
