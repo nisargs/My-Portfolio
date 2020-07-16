@@ -337,3 +337,33 @@ body {
 .copyrightSection p{
     margin: 0;
 }
+
+#navigation{
+    background-color: #0a2d52;
+    padding: 20px 10px;
+    z-index: 100;
+    width: 100%;
+}
+
+#navigation li{
+    padding: 0 10px;
+}
+
+#navigation li a{
+    color: #ffffff;
+}
+
+.navbar-brand
+.navbar-brand:hover{
+    color: #ffffff;
+}
+
+.navbar-toggler-icon{
+    background: url("../img/icons/menu.png");
+    background-size: 100%;
+}
+
+.fixedNav #navigation{
+    position: fixed;
+    top: 0;
+}
