@@ -68,7 +68,7 @@ body {
     height: 50%;
 }
 
-.skillsSection{
+.frontEndSection{
     background-color: #e74c3c;
     color: #ffffff;
 }
@@ -77,7 +77,38 @@ body {
     margin-bottom: -300px;
 }
 
-.skill{
+.frontEndskill{
+    text-align: center;
+    margin-left: 25px;
+
+}
+
+.backEndSection,
+.contactSection{
+    background-color: #a9c350;
+    color: #ffffff;
+}
+
+.col-md-5{
+    margin-bottom: -300px;
+}
+
+.backEndskill{
+    text-align: center;
+    margin-left: 25px;
+
+}
+
+.toolsSection{
+    background-color: #e74c3c;
+    color: #ffffff;
+}
+
+.col-md-5{
+    margin-bottom: -300px;
+}
+
+.toolsskill{
     text-align: center;
     margin-left: 25px;
 
@@ -106,4 +137,62 @@ body {
 
 .chart .percent:after{
     content: '%';
+}
+
+.squareItem {
+    margin-top: 30px;
+    position: relative;
+}
+
+.squareInnerContainer{
+    position: relative;
+    padding: 50px 15px 35px;
+    text-align: center;
+    border: 2px solid #444444;
+    border-top: none;
+}
+
+.squareInnerContainer:before,
+.squareInnerContainer:after{
+    content: '';
+    position: absolute;
+    top: 0px;
+    width: 30%;
+    border-bottom: 2px solid #444444;
+}
+
+.squareInnerContainer:before{
+    right: 0px;
+}
+
+.squareInnerContainer:after{
+    left: 0px;
+}
+
+.squareContent h2{
+    font-size: 56px;
+    margin-bottom: 10px;
+    font-weight: 400;
+    color: #e74c3c;
+}
+
+.squareContent h3{
+    font-size: 13px;
+    font-weight: 600;
+    margin: 0px;
+}
+
+.contactButton{
+    color: #ffffff;
+    padding: 15px 20px;
+    display: inline-block;
+    margin-top: 20px;
+    border: 1px solid #ffffff;
+    border-radius: 2px;
+}
+
+.contactButton:hover{
+    text-decoration: none;
+    color: a9c350;
+    background-color: #ffffff;
 }

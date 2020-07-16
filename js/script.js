@@ -15,32 +15,72 @@ $(document).ready(function () {
 
     $('.owl-carousel').owlCarousel({
         loop:true,
-        items: 4,
+        items: 3,
         responsive:{
             0:{
                 items:1
             },
-            480:{
+            600:{
                 items:2
             },
-            768:{
+            1000:{
                 items:3
-            },
-            938:{
-                items:4
             }
+    }
+    });
+
+    var skillTopOffset = $(".frontEndSection").offset().top;
+
+    $(window).scroll(function () {
+        if(window.pageYOffset > skillTopOffset - $(window).height() + 200){
+                $('.chart').easyPieChart({
+                    easing: 'easeInOut',
+                    barColor: '#fff',
+                    trackColor: false,
+                    scaleColor: false,
+                    lineWidth: 4,
+                    size: 152,
+                    onStep: function(from, to, percent){
+                        $(this.el).find('.percent').text(Math.round(percent));
+                    }
+                });
         }
     });
-    $('.chart').easyPieChart({
-        easing: 'easeInOut',
-        barColor: '#fff',
-        trackColor: false,
-        scaleColor: false,
-        lineWidth: 4,
-        size: 152,
-        onStep: function(from, to, percent){
-            $(this.el).find('.percent').text(Math.round(percent));
+
+    var backEndTopOffset = $(".backEndSection").offset().top;
+    console.log(backEndTopOffset)
+    $(window).scroll(function () {
+        if(window.pageYOffset > backEndTopOffset - $(window).height() + 200){
+                $('.chart').easyPieChart({
+                    easing: 'easeInOut',
+                    barColor: '#fff',
+                    trackColor: false,
+                    scaleColor: false,
+                    lineWidth: 4,
+                    size: 152,
+                    onStep: function(from, to, percent){
+                        $(this.el).find('.percent').text(Math.round(percent));
+                    }
+                });
         }
-        });
+    });
+
+    var toolsTopOffset = $(".toolsSection").offset().top;
+
+    $(window).scroll(function () {
+        if(window.pageYOffset > toolsTopOffset - $(window).height() + 200){
+                $('.chart').easyPieChart({
+                    easing: 'easeInOut',
+                    barColor: '#fff',
+                    trackColor: false,
+                    scaleColor: false,
+                    lineWidth: 4,
+                    size: 152,
+                    onStep: function(from, to, percent){
+                        $(this.el).find('.percent').text(Math.round(percent));
+                    }
+                });
+        }
+    });
 
 });
